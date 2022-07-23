@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest Crypto Assets List</title>
+</head>
+<body>
+
+
+<table>
+    <thead>Latest Crypto Assets List:</thead>
+    <thead>
+    <tr>
+
+        <th style="text-align: left">NAME</th>
+        <th style="text-align: left">SYMBOL</th>
+        <th style="text-align: left">PRICE IN USD</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for asset in assets %}
+    <tr>
+        <td style="font-style: italic">{{ asset.getName }}</td>
+        <td style="font-weight: bold; color: brown">{{ asset.getSymbol }}</td>
+        <td>{{ asset.getPrice }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+</body>
+</html>
